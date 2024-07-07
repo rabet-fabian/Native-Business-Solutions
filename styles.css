@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  cursor: context-menu;
+}
+
+body {
+  background-image: url("images/business-7111768_1920.jpg");
+  background-size: cover;
+  height: 1500px;
+  background-position: center;
+}
+
+nav {
+  height: 80px;
+  background: rgba(187, 187, 187, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.logo {
+  padding-left: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1.5rem;
+}
+
+nav a:hover {
+  color: #00bcd4;
+  cursor: pointer;
+}
+
+.hero-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-container h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.hero-container p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.hero-context {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 30vh;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 100px;
+  background: rgba(187, 187, 187, 0.2);
+}
+
+.col-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.col-left h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.col-left p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.col-right {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+}
