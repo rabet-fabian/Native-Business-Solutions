@@ -50,6 +50,11 @@ nav a:hover {
   overflow: hidden;
 }
 
+.row-2 {
+  display: block;
+  overflow: hidden;
+}
+
 .hero-container {
   display: flex;
   align-items: center;

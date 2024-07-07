@@ -64,11 +64,11 @@
 
 @keyframes moveDownS {
   0% {
-    transform: translateX(0px) translateY(110%);
+    transform: translateX(0px) translateY(-110%);
   }
 
   25% {
-    transform: translateX(0px) translateY(55%);
+    transform: translateX(0px) translateY(-55%);
   }
 
   50% {
@@ -88,6 +88,70 @@
   animation-name: moveDownS;
   animation-iteration-count: 1;
   animation-duration: 3s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveUpSub {
+  0% {
+    transform: translateX(0px) translateY(130%);
+  }
+
+  25% {
+    transform: translateX(0px) translateY(78%);
+  }
+
+  50% {
+    transform: translateX(0px) translateY(52%);
+  }
+
+  75% {
+    transform: translateX(0px) translateY(26%);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0%);
+  }
+}
+
+.row-2 .Sub {
+  animation-name: moveUpSub;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveUpSub-2 {
+  0% {
+    transform: translateX(0px) translateY(-130%);
+  }
+
+  25% {
+    transform: translateX(0px) translateY(-78%);
+  }
+
+  50% {
+    transform: translateX(0px) translateY(-52%);
+  }
+
+  75% {
+    transform: translateX(0px) translateY(-26%);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0%);
+  }
+}
+
+.row-2 .Sub-2 {
+  animation-name: moveUpSub-2;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
   animation-direction: normal;
   animation-timing-function: linear;
   animation-delay: 100ms;
