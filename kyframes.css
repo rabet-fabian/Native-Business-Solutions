@@ -1,0 +1,32 @@
+@keyframes moveRightN {
+    0% {
+        transform: translateX(-20%) translateY(0);
+    }
+
+    25% {
+        transform: translateX(-10%) translateY(0px);
+    }
+
+    50% {
+        transform: translateX(0%) translateY(0px);
+    }
+
+    75% {
+        color: #05a3b8;
+    }
+
+    100% {
+        color: #00bcd4;
+    }
+}
+
+
+.hero-logo .N {
+    animation-name: moveRightN;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+}
