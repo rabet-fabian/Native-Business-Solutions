@@ -37,10 +37,16 @@ nav a:hover {
   cursor: pointer;
 }
 
-.hero-logo h1 {
+.hero-logo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-size: 3rem;
+}
+
+.row {
+  display: block;
   overflow: hidden;
 }
 
@@ -76,7 +82,6 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
 }
 
 .col-left h1 {
@@ -91,7 +96,7 @@ nav a:hover {
 
 .col-right {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 768px) {

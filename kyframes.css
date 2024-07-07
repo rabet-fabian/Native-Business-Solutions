@@ -1,32 +1,95 @@
 @keyframes moveRightN {
-    0% {
-        transform: translateX(-20%) translateY(0);
-    }
+  0% {
+    transform: translateX(-110%) translateY(0);
+  }
 
-    25% {
-        transform: translateX(-10%) translateY(0px);
-    }
+  25% {
+    transform: translateX(-55%) translateY(0px);
+  }
 
-    50% {
-        transform: translateX(0%) translateY(0px);
-    }
+  50% {
+    transform: translateX(0%) translateY(0px);
+  }
 
-    75% {
-        color: #05a3b8;
-    }
+  75% {
+    color: #05a3b8;
+  }
 
-    100% {
-        color: #00bcd4;
-    }
+  100% {
+    color: #00bcd4;
+  }
 }
 
+.row .N {
+  animation-name: moveRightN;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
+}
 
-.hero-logo .N {
-    animation-name: moveRightN;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-direction: normal;
-    animation-timing-function: linear;
-    animation-delay: 100ms;
-    animation-fill-mode: forwards;
+@keyframes moveLeftB {
+  0% {
+    transform: translateX(110%) translateY(0);
+  }
+
+  25% {
+    transform: translateX(55%) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(0%) translateY(0px);
+  }
+
+  75% {
+    color: #05a3b8;
+  }
+
+  100% {
+    color: #00bcd4;
+  }
+}
+
+.row .B {
+  animation-name: moveLeftB;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveDownS {
+  0% {
+    transform: translateX(0px) translateY(110%);
+  }
+
+  25% {
+    transform: translateX(0px) translateY(55%);
+  }
+
+  50% {
+    transform: translateX(0px) translateY(0%);
+  }
+
+  75% {
+    color: #05a3b8;
+  }
+
+  100% {
+    color: #00bcd4;
+  }
+}
+
+.row .S {
+  animation-name: moveDownS;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
 }
