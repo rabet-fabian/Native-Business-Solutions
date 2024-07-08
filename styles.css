@@ -15,11 +15,17 @@ body {
 
 nav {
   height: 80px;
-  background: rgba(187, 187, 187, 0.2);
+  width: 100%;
+  background: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 1rem;
+  position: fixed;
+}
+
+.nav {
+  height: 100px;
 }
 
 .logo {
@@ -35,6 +41,14 @@ nav a {
 nav a:hover {
   color: #00bcd4;
   cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 47.3rem;
 }
 
 .hero-logo {
@@ -59,6 +73,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 100px;
 }
 
 .hero-container h1 {
@@ -72,14 +87,21 @@ nav a:hover {
   line-height: 1.5;
 }
 
+.about-us {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .hero-context {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 30vh;
+  height: 60vh;
   padding-left: 5px;
-  padding-right: 5px;
+  /* padding-right: 5px; */
   margin-top: 100px;
-  background: rgba(187, 187, 187, 0.2);
+  background: #fff;
+  border-radius: 15%;
 }
 
 .col-left {
@@ -87,6 +109,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-left: 50px;
 }
 
 .col-left h1 {
@@ -102,6 +125,12 @@ nav a:hover {
 .col-right {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.col-right img {
+  border-radius: 10%;
 }
 
 @media screen and (max-width: 768px) {
