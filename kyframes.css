@@ -157,3 +157,53 @@
   animation-delay: 100ms;
   animation-fill-mode: forwards;
 }
+
+@keyframes moveRightContext {
+  0% {
+    transform: translateX(-130%) translateY(0px);
+  }
+
+  25% {
+    transform: translateX(-78%) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(-52%) translateY(0px);
+  }
+
+  75% {
+    transform: translateX(-26%) translateY(0px);
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0px);
+  }
+}
+
+.about-us .hero-context {
+  animation-name: moveRightContext;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 4s;
+  animation-delay: 1750ms;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
