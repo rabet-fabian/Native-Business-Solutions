@@ -96,19 +96,19 @@
 
 @keyframes moveUpSub {
   0% {
-    transform: translateX(0px) translateY(130%);
+    transform: translateX(0px) translateY(180%);
   }
 
   25% {
-    transform: translateX(0px) translateY(78%);
+    transform: translateX(0px) translateY(135%);
   }
 
   50% {
-    transform: translateX(0px) translateY(52%);
+    transform: translateX(0px) translateY(90%);
   }
 
   75% {
-    transform: translateX(0px) translateY(26%);
+    transform: translateX(0px) translateY(45%);
   }
 
   100% {
@@ -128,19 +128,19 @@
 
 @keyframes moveUpSub-2 {
   0% {
-    transform: translateX(0px) translateY(-130%);
+    transform: translateX(0px) translateY(-180%);
   }
 
   25% {
-    transform: translateX(0px) translateY(-78%);
+    transform: translateX(0px) translateY(-135%);
   }
 
   50% {
-    transform: translateX(0px) translateY(-52%);
+    transform: translateX(0px) translateY(-90%);
   }
 
   75% {
-    transform: translateX(0px) translateY(-26%);
+    transform: translateX(0px) translateY(-45%);
   }
 
   100% {
@@ -180,6 +180,8 @@
   }
 }
 
+/* intro animation ends here */
+
 .about-us .hero-context {
   animation-name: moveRightContext;
   animation-iteration-count: 1;
@@ -203,6 +205,58 @@
 
 .fade-in {
   animation: fadeIn 4s;
+  animation-delay: 1750ms;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+/* first context ends here */
+
+@keyframes moveLeftContext {
+  0% {
+    transform: translateX(130%) translateY(0px);
+  }
+
+  25% {
+    transform: translateX(78%) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(52%) translateY(0px);
+  }
+
+  75% {
+    transform: translateX(26%) translateY(0px);
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0px);
+  }
+}
+
+.hero-context-2 {
+  animation-name: moveLeftContext;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn-2 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.fade-in-2 {
+  animation: fadeIn-2 4s;
   animation-delay: 1750ms;
   animation-fill-mode: forwards;
   visibility: hidden;

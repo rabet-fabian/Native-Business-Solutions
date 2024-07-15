@@ -7,10 +7,17 @@
 }
 
 body {
-  background-image: url("images/business-7111768_1920.jpg");
-  background-size: cover;
+  /* background-image: url("images/business-7111768_1920.jpg"); */
+  background-color: #dfc389;
+  background-size: contain;
   height: 100%;
+  width: 100%;
   background-position: center;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 nav {
@@ -21,11 +28,23 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-right: 1rem;
+  transition: 0.5s;
+  position: center;
+  z-index: 2;
+}
+
+#navbar {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 30px 30px;
+  height: 80px;
+  transition: top 0.8s;
 }
 
 .nav {
-  height: 100px;
+  height: 80px;
 }
 
 .logo {
@@ -98,10 +117,10 @@ nav a:hover {
   grid-template-columns: 1fr 1fr;
   height: 60vh;
   padding-left: 5px;
-  /* padding-right: 5px; */
   margin-top: 100px;
-  background-color: #607d8b70;
+  background-color: #ffffffb9;
   border-radius: 15%;
+  animation-timing-function: linear;
 }
 
 .col-left {
@@ -133,6 +152,86 @@ nav a:hover {
 .col-right img {
   border-radius: 10%;
   z-index: 1;
+}
+
+.hero-context-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 60vh;
+  padding-left: 5px;
+  width: 100%;
+  background-color: #ffffffb9;
+  border-radius: 15%;
+}
+
+.col-left-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5vw;
+}
+
+.col-left-img img {
+  border-radius: 10%;
+  z-index: 1;
+}
+
+.col-right-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 50px;
+  font-weight: bold;
+}
+
+.col-right-2 h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.col-right-2 p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.contact-us {
+  display: flex;
+  height: 60vh;
+  color: #fff;
+}
+
+.contact {
+  display: grid;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #161414;
+  margin-top: 20vh;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact .col-left-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 5vh;
+  margin-left: 4vw;
+}
+
+address p a {
+  color: #fff;
+  text-decoration: underline;
+  line-height: 50px;
+}
+
+.mail-hover:hover,
+.phone-hover:hover {
+  color: #00bcd4;
+  cursor: pointer;
+}
+
+.footer-line {
+  border-top: 5px solid #fff;
 }
 
 @media screen and (max-width: 768px) {

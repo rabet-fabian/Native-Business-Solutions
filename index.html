@@ -6,10 +6,11 @@
     <title>Site</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="kyframes.css" />
+    <link rel="stylesheet" href="mediaq.css"/>
   </head>
   <body>
     <div class="nav">
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <div class="logo">
           <img src="images/output-onlinepngtools (nav-logo).png" />
         </div>
@@ -50,7 +51,7 @@
     <!-- Intro ends here -->
 
     <section class="about-us">
-      <div class="hero-context">
+      <div class="hero-context" id="scrisapare">
         <div class="col-left">
           <h1 class="context">Lorem ipsum dolor sit amet.</h1>
           <p class="context-p">
@@ -68,26 +69,45 @@
             style="width: 600px; height: 430px"
           />
         </div>
-
-        <div class="hero-context">
-          <div class="col-left">
-            <h1 class="context">Lorem ipsum dolor sit amet.</h1>
-            <p class="context-p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugit
-              enim fugiat, nemo non natus autem sint. Provident numquam iusto
-              animi temporibus rerum officia voluptatem, voluptas minus nemo
-              reiciendis illo.
-            </p>
-          </div>
-          <div class="col-right">
-            <img
-              class="fade-in"
-              src="images/innovation-561388_640.jpg"
-              alt="inovation"
-              style="width: 600px; height: 430px"
-            />
-          </div>
-      </div>
     </section>
+
+    <div class="hero-context-2" id="scrisapare2">
+      <div class="col-left-img">
+        <img src="images/innovation-561388_640.jpg"
+        alt=""
+        class="fade-in-2"
+        style="width: 600px; height: 430px">
+      </div>
+
+      <div class="col-right-2">
+        <h1 class="context-2">Lorem ipsum dolor sit amet.</h1>
+        <p class="context-p2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dignissimos
+          tempora eos debitis explicabo minima, et ipsum rem voluptas
+          eligendi consequatur omnis ullam odio expedita minus
+          illum dolore quam dolor.</p>
+      </div>
+    </div>
+
+    <!-- context ends here -->
+
+    <div class="contact-us">
+      <div class="contact">
+        <div class="col-left-contact">
+          <h1 class="contact-h1">Contact Us</h1>
+          <address>
+            <p><a class="mail-hover" href="email@example.com">email@example.com</a></p>
+            <p>Call us at:<a class="phone-hover" href="tel:5556666777">555-6666-777</a></p>
+          </address>
+        </div>
+        <div class="col-mid-contact"></div>
+        <div class="col-right-contact"></div>
+      </div>
+    </div>
+      <footer class="contact-us-footer">
+        <hr class="footer-line"/>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
