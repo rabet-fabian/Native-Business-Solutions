@@ -6,6 +6,10 @@
   cursor: context-menu;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* background-image: url("images/business-7111768_1920.jpg"); */
   background-color: #dfc389;
@@ -57,9 +61,15 @@ nav a {
   padding: 0 1.5rem;
 }
 
+.nav-items button {
+  background: transparent;
+  border-radius: 15%;
+}
+
 nav a:hover {
   color: #00bcd4;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .hero {
@@ -117,10 +127,10 @@ nav a:hover {
   grid-template-columns: 1fr 1fr;
   height: 60vh;
   padding-left: 5px;
-  margin-top: 100px;
+  margin-top: 150px;
   background-color: #ffffffb9;
   border-radius: 15%;
-  animation-timing-function: linear;
+  animation-timing-function: ease;
 }
 
 .col-left {
@@ -197,7 +207,7 @@ nav a:hover {
 
 .contact-us {
   display: flex;
-  height: 60vh;
+  height: 50vh;
   color: #fff;
 }
 
@@ -205,12 +215,12 @@ nav a:hover {
   display: grid;
   justify-content: space-evenly;
   width: 100%;
-  background-color: #161414;
+  background-color: #000;
   margin-top: 20vh;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.contact .col-left-contact {
+.contact .col-mid-contact {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -218,16 +228,36 @@ nav a:hover {
   margin-left: 4vw;
 }
 
-address p a {
+.contact .col-right-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 5vh;
+  margin-left: 4vw;
+}
+
+.col-mid-contact li a {
   color: #fff;
   text-decoration: underline;
   line-height: 50px;
 }
 
+.col-right-contact li {
+  color: #fff;
+  line-height: 50px;
+}
+
+.phone-hover {
+  color: #ddd;
+}
+
 .mail-hover:hover,
-.phone-hover:hover {
+.phone-hover:hover,
+.mission:hover,
+.services:hover {
   color: #00bcd4;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .footer-line {
@@ -238,4 +268,25 @@ address p a {
   .hero-container {
     grid-template-columns: 1fr;
   }
+}
+
+.to-top {
+  display: flex;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 3;
+}
+
+#to-top {
+  background-color: #00bcd4;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 15%;
+}
+
+#to-top:hover {
+  cursor: pointer;
+  background-color: #017888;
+  color: #fff;
 }
