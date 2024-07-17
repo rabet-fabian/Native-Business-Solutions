@@ -27,9 +27,10 @@ document.addEventListener("scroll", function () {
   }
 });
 
-function scrollWin() {
-  window.scrollTo(0, 0);
-}
+// function scrollWin() {
+//   window.scrollTo(0, 0);
+// }
+
 
 window.onscroll = () => {
   if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
@@ -37,3 +38,13 @@ window.onscroll = () => {
   }
 };
 const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+let mysBtn = document.getElementById("to-top");
+
+window.addEventListener("scroll", function () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mysBtn.style.display = "block";
+  } else {
+    mysBtn.style.display = "none";
+  }
+});

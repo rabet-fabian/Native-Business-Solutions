@@ -12,19 +12,32 @@
     <div class="nav">
       <nav class="navbar" id="navbar">
         <div class="logo">
-          <img src="images/output-onlinepngtools (nav-logo).png" />
+          <h1>Native Business Solutions</h1>
         </div>
-        <div class="nav-items">
+        <nav>
+          <div class="navbar"></div>
+            <ul class="menu">
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- <div class="nav-items">
           <a href="#top" onclick="scrollWin()">Home</a>
-          <a href="#middle">About us</a>
-          <a href="#bottom">Contact us</a>
-        </div>
+          <a href="#middle" onclick="scrollWin()">About us</a>
+          <a href="#bottom" onclick="scrollWin()">Contact us</a>
+        </div> -->
       </nav>
     </div>
 
-<div id="to-top" class="to-top" onclick="toTop()">Back to Top</div>
+<div id="to-top" class="to-top" onclick="toTop()">
+  <img src="images/arrow-up-circle-svgrepo-com.svg"/>
+</div>
 
     <!-- navbar ends here -->
+      <div id="Home"></div>
 
     <section class="hero">
       <div class="hero-logo">
@@ -52,7 +65,7 @@
 
     <!-- Intro ends here -->
 
-    <section class="about-us">
+    <section class="about-us" id="About">
       <div class="hero-context" id="scrisapare">
         <div class="col-left">
           <h1 class="context">Lorem ipsum dolor sit amet.</h1>
@@ -93,19 +106,25 @@
 
     <!-- context ends here -->
 
-    <div class="contact-us">
+    <div class="contact-us" id="Contact">
       <div class="contact">
         <div class="col-left-contact">
-          
+          <h1>Native</h1>
+          <h1>Business</h1>
+          <h1>Solutions</h1>
         </div>
         <div class="col-mid-contact">
           <h1 class="contact-h1">Contact Us</h1>
           <address>
             <ul>
-            <li><a class="mail-hover" href="email@example.com">email@example.com</a></li>
-            <li>Call us at:<a class="phone-hover" href="tel:5556666777">555-6666-777</a></li>
+            <li><img src="images/mail-svgrepo-com (1).svg"/><a class="mail-hover" href="email@example.com">email@example.com</a></li>
+            <li><img src="images/phone-alt3-svgrepo-com.svg"/><a class="phone-hover" href="tel:5556666777">555-6666-777</a></li>
           </ul>
         </address>
+        <div>
+          <br>
+          <span class="credit">Created by Fabi si Florin&copy; 2024 All rights reserved.</span>
+        </div>
         </div>
         <div class="col-right-contact">
           <h1>About Us</h1>
@@ -115,10 +134,11 @@
           </ul>
         </div>
       </div>
-    </div>
       <footer class="contact-us-footer">
         <hr class="footer-line"/>
     </footer>
+    </div>
+      
 
     <script src="script.js"></script>
   </body>
