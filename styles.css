@@ -55,6 +55,8 @@ nav {
   width: 100%;
   background: black;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 15);
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
 }
 nav.navbar {
   display: flex;
@@ -256,7 +258,7 @@ nav a {
 
 .contact-us {
   display: flex;
-  height: 100%;
+  height: 70vh;
   color: #fff;
 }
 
@@ -272,7 +274,7 @@ nav a {
 .contact .col-left-contact {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin-top: 5vh;
   margin-left: 6vw;
   line-height: 70px;
@@ -346,6 +348,8 @@ nav a {
 } */
 
 .footer-line {
+  display: flex;
+  flex-direction: row;
   border-top: 5px solid #fff;
 }
 
@@ -378,3 +382,34 @@ nav a {
   color: #fff;
   border-radius: 50%;
 }
+
+.credit {
+  position: relative;
+  text-align: center;
+  left: 105%;
+  border-top: 2px solid #fff;
+}
+
+.crd {
+  color: #00bcd4;
+}
+
+.crd:hover {
+  cursor: pointer;
+}
+
+.credit span {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social {
+  padding-top: 10px;
+  margin-left: 32px;
+}
+
+/* a .face:hover {
+  cursor: pointer;
+  background-color: #00bcd4;
+} */
