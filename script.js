@@ -11,7 +11,7 @@
 
 document.addEventListener("scroll", function () {
   var scrisapare = document.getElementById("scrisapare");
-  if (window.scrollY > 100) {
+  if (window.scrollY > 400) {
     scrisapare.style.display = "grid";
   } else {
     scrisapare.style.display = "none";
@@ -20,17 +20,21 @@ document.addEventListener("scroll", function () {
 
 document.addEventListener("scroll", function () {
   var scrisapare2 = document.getElementById("scrisapare2");
-  if (window.scrollY > 100) {
+  if (window.scrollY > 600) {
     scrisapare2.style.display = "grid";
   } else {
     scrisapare2.style.display = "none";
   }
 });
 
-// function scrollWin() {
-//   window.scrollTo(0, 0);
-// }
+const hamMenu = document.querySelector(`.ham-menu`);
 
+const offScreenMenu = document.querySelector(`.off-screen-menu`);
+
+hamMenu.addEventListener(`click`, () => {
+  hamMenu.classList.toggle(`active`);
+  offScreenMenu.classList.toggle(`active`);
+});
 
 window.onscroll = () => {
   if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {

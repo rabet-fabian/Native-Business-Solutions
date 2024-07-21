@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site</title>
+    <title>Native Business Solutions</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="kyframes.css" />
     <link rel="stylesheet" href="mediaq.css"/>
@@ -14,23 +14,41 @@
         <div class="logo">
           <h1>Native Business Solutions</h1>
         </div>
-        <nav>
           <div class="navbar"></div>
             <ul class="menu">
               <li><a href="#Home">Home</a></li>
               <li><a href="#About">About</a></li>
               <li><a href="#Contact">Contact</a></li>
             </ul>
+
+            <div class="off-screen-menu">
+            <ul class="menu">
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Home">About</a></li>
+              <li><a href="#Home">Contact</a></li>
+            </ul>
           </div>
-        </nav>
+
+            <div class="ham-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            
+          </div>
+
+          
+
+          <!-- <nav class="phone-menu"> -->
+            
+          <!-- </nav> -->
+      </nav>
 
         <!-- <div class="nav-items">
           <a href="#top" onclick="scrollWin()">Home</a>
           <a href="#middle" onclick="scrollWin()">About us</a>
           <a href="#bottom" onclick="scrollWin()">Contact us</a>
         </div> -->
-      </nav>
-    </div>
 
 <div id="to-top" class="to-top" onclick="toTop()">
   <img src="images/arrow-up-circle-svgrepo-com.svg"/>
@@ -139,12 +157,15 @@
         </div>
 
         <div class="social">
-          <a href="#" >
+          <ul>
+          <li><a href="#" >
             <img class="face" src="/images/facebook-rounded-border-svgrepo-com.svg"/>
-          </a>
-          <a href="#" >
+          </a></li>
+          
+          <li><a href="#" >
             <img class="inst" src="/images/instagram-svgrepo-com.svg"/>
-          </a>
+          </a></li>
+        </ul>
         </div>
       </div>
     </div>
