@@ -52,6 +52,8 @@ body::-webkit-scrollbar {
   width: 50px;
   margin-left: auto;
   position: relative;
+  /* visibility: collapse; */
+  display: none;
 }
 
 .ham-menu span {

@@ -1,5 +1,3 @@
-
-
 @media screen and (max-width: 991px) {
   /* start of large tablet styles */
 }
@@ -8,6 +6,12 @@
   /* start of medium tablet styles */
 }
 
-@media screen and (min-width: 479px) and (max-width: 678px) {
-  /* start of phone styles */
+@media only screen and (max-width: 438px) {
+  nav.navbar .menu {
+    display: none;
+  }
+
+  .ham-menu {
+    display: flex;
+  }
 }
