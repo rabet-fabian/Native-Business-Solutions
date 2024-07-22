@@ -90,6 +90,17 @@ body::-webkit-scrollbar {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+/* .menu-drop {
+  line-height: 200px;
+} */
+
+/* #dropHome,
+#dropAbout,
+#dropContact {
+  border: 2px solid #fff;
+  border-radius: 15px;
+} */
+
 nav {
   height: 80px;
   width: 100%;
@@ -147,6 +158,13 @@ nav.navbar .menu {
   font-weight: 500;
   text-decoration: none;
 }
+
+.off-screen-menu .menu button a {
+  color: #fff;
+  font-size: 4rem;
+  /* z-index: 100; */
+}
+
 section {
   height: 80vh;
   width: 100%;
