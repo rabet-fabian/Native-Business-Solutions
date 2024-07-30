@@ -20,7 +20,16 @@ document.addEventListener("scroll", function () {
 
 document.addEventListener("scroll", function () {
   var scrisapare2 = document.getElementById("scrisapare2");
-  if (window.scrollY > 600) {
+  if (window.scrollY > 800) {
+    scrisapare2.style.display = "grid";
+  } else {
+    scrisapare2.style.display = "none";
+  }
+});
+
+document.addEventListener("scroll", function () {
+  var scrisapare2 = document.getElementById("scrisapare3");
+  if (window.scrollY > 1200) {
     scrisapare2.style.display = "grid";
   } else {
     scrisapare2.style.display = "none";
