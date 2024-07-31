@@ -11,7 +11,7 @@
 
 document.addEventListener("scroll", function () {
   var scrisapare = document.getElementById("scrisapare");
-  if (window.scrollY > 400) {
+  if (window.scrollY > 0.5) {
     scrisapare.style.display = "grid";
   } else {
     scrisapare.style.display = "none";
@@ -20,7 +20,7 @@ document.addEventListener("scroll", function () {
 
 document.addEventListener("scroll", function () {
   var scrisapare2 = document.getElementById("scrisapare2");
-  if (window.scrollY > 800) {
+  if (window.scrollY > 500) {
     scrisapare2.style.display = "grid";
   } else {
     scrisapare2.style.display = "none";
@@ -29,7 +29,7 @@ document.addEventListener("scroll", function () {
 
 document.addEventListener("scroll", function () {
   var scrisapare2 = document.getElementById("scrisapare3");
-  if (window.scrollY > 1200) {
+  if (window.scrollY > 900) {
     scrisapare2.style.display = "grid";
   } else {
     scrisapare2.style.display = "none";

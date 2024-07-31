@@ -268,6 +268,14 @@ nav a {
   margin-top: -191px;
 }
 
+#about-3 {
+  margin-top: -192px;
+}
+
+.fade-in {
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 1);
+}
+
 .hero-context {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -318,6 +326,8 @@ nav a {
   width: 100%;
   background-color: #000;
   border-radius: 15%;
+  animation-timing-function: ease, step-start,
+    cubic-bezier(-0.1, -0.7, -1, -0.1);
 }
 
 .col-left-img {
